@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mystart.kz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,100i,200,200i,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+<body>
+    <header>
+        <div class="navigation d-flex flex-wrap align-items-center justify-content-between"> <!-----------------Навигация--------------->
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-8 col-sm-8 col-md-2 col-lg-3 col-xl-4 col-xxl-5">
+                        <div class="logo">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="d-none d-sm-none d-md-block col-md-8 col-lg-7 col-xl-6 col-xxl-6">
+                        <div class="menu">
+                            <ul class="nav justify-content-end">
+                                <a href="#"><li>Главная</li></a>
+                                <a href="#"><li>О нас</li></a>
+                                <a href="#"><li>Контакты</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-1">
+                        <div class="nav button-log-in justify-content-end">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 18 18">
+                                <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                                <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                              </svg> Вход</button>
+                              <!-- Модальное окно -->
+                            <div class="log-in">
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Выполните вход</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                            </div>
+                                            <div class="modal-body pb-1">
+                                            <input type="email" placeholder="Email"><br>
+                                            <input type="password" placeholder="Введите ваш пароль"><br>
+                                            </div>
+                                            <hr>
+                                            <div class="container-modal">
+                                                <div class="footer-modal justify-content-center">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <button class="btn btn-primary">Войти</button>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <button class="btn btn-primary" >Регистрация</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu fixed-bottom d-block d-md-none"> <!--------Mobile-Menu--------->
+            <div class="container-fluid text-center">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                          <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+                        </svg>
+                        <br>
+                        Регистрация
+                    </div>
+                    <div class="col-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                          <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+                        </svg><br>
+                        Войти
+                    </div>
+                    <div class="col-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm64 192c17.7 0 32 14.3 32 32v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V256c0-17.7 14.3-32 32-32zm64-64c0-17.7 14.3-32 32-32s32 14.3 32 32V352c0 17.7-14.3 32-32 32s-32-14.3-32-32V160zM320 288c17.7 0 32 14.3 32 32v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V320c0-17.7 14.3-32 32-32z"/></svg>
+                        <br>
+                        О нас
+                    </div>
+                    <div class="col-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/></svg>
+                        <br>
+                        Контакты
+                    </div>
+                </div>
+            </div>
+    </div> <!--------/Mobile-Menu-END-------->
+    </header>
+    
+    <div class="content">
+        <div class="container">
+            <div class="site-header"><!----------Шапка сайта------------>
+                <div class="row">
+                    <div class="col-9 align-items-stretch">
+                        <div class="site-header-left">
+                            <div class="logo">
+                                <img src="img/logo-white.png" alt="">
+                            </div>
+                            <span>Платформа для онлайн обучения в Satbayev University</span>
+                            <div class="tags">
+                                <div class="tag-text">Часто задаваемые вопросы</div>
+                                <div class="tag-text">Обратная связь</div>
+                                <div class="tag-text">Инструкция</div>
+                                <div class="tag-text">Регистрация</div>
+                            </div>
+                            <div class="header-finish"></div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="site-header-right">
+                            <img src="img/5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div> <!----------Шапка сайта-END----------->
+            <div class="search-form"> <!--------------Форма поиска------------->
+                <div class="input-group">
+                    <input type="search" class="form-control rounded" placeholder="Поиск по библиотеке" aria-label="Search" aria-describedby="search-addon" />
+                    <button type="button" class="btn btn-outline-primary" data-mdb-ripple-init>Найти</button>
+                </div>
+            </div><!--------------Форма поиска-END------------>
+            <div class="onas"><!--------------О-нас------------->
+                <div class="row">
+                    <div class="col-6">
+                        <div class="onas-image">
+                             <img src="img/rectangle 6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="onas-text">
+                            <h2>Институт цифровых технологий и профессионального развития</h2>
+                            <hr class="head-line">
+                            <p>ADWAY.KZ — первая платформа для онлайн обучения в университете Казахстана с выдачей государственных дипломов. Наша платформа сочетает в себе передовые технологии обучения и высокий стандарт академического превосходства.
+                            </p>
+                            <p>Онлайн-обучение – актуальный тренд в образовании, последовательно реализуемый такими университетами как Stanford, Berkley и MIT. Satbayev University идет в ногу с мировыми трендами и переходит на дистанционное обучение. Эта возможность предоставляется Институтом цифровых технологий и профессионального развития</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--------------О-нас-END------------>
+            <div class="why-us">
+                <h2>Почему выбирают нас?</h2>
+                <hr class="head-line">
+                <div class="why-us-blocks">
+                    <div class="row d-flex align-items-stretch">
+                        <div class="col-4">
+                            <div class="why-us-block">
+                                <div class="why-us-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="45" width="45" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/></svg>
+                              </div>
+                                <h3>Качество образования</h3>
+                                <p>На платформе "Adway.kz" мы гордимся предоставлением высококачественных учебных программ, разработанных ведущими экспертами в соответствующих областях. Наши профессора и инструкторы обладают богатым опытом и страстью к обучению, гарантируя, что студенты получат актуальные знания и навыки, необходимые для успешной карьеры.</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="why-us-block pb-5">
+                                <div class="why-us-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="45" width="45" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                                </div>
+                                <h3>Гибкость и доступность</h3>
+                                <p>Мы понимаем, что студенты могут иметь разные обстоятельства и обязательства. Поэтому "Adway.kz" предоставляет гибкие сроки для обучения, доступ к учебным материалам 24/7 и возможность изучать курсы в удобном темпе, чтобы каждый студент мог достичь своих образовательных целей.</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="why-us-block">
+                                <div class="why-us-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="45" width="45" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M160 64c0-35.3 28.7-64 64-64H576c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H336.8c-11.8-25.5-29.9-47.5-52.4-64H384V320c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v32h64V64L224 64v49.1C205.2 102.2 183.3 96 160 96V64zm0 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zM133.3 352h53.3C260.3 352 320 411.7 320 485.3c0 14.7-11.9 26.7-26.7 26.7H26.7C11.9 512 0 500.1 0 485.3C0 411.7 59.7 352 133.3 352z"/></svg>    
+                                </div>
+                                <h3>Технологические ресурсы</h3>
+                                <p>Мы внедряем современные технологии и инновационные методики обучения в каждый аспект нашего образовательного процесса. В "Adway.kz" студенты получают доступ к вебинарам, виртуальным классам, интерактивным симуляциям и специализированным программам, обеспечивая богатый и эффективный опыт обучения.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <img src="img/logo-white.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu">
+                        <h3>Контакты</h3>
+                        <ul class="list-group">
+                            <a href="#"><li>г. Астана ул. Мангилик ел с3.5</li></a>
+                            <a href="#"><li>+7 (778) 411-95-35</li></a>
+                            <a href="#"><li>admin@uchitelya.kz</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu">
+                        <h3>Участнику</h3>
+                        <ul class="list-group">
+                            <a href="#"><li>О нас</li></a>
+                            <a href="#"><li>Контакты</li></a>
+                            <a href="#"><li>Регистрация</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu">
+                        <h3>Помощь</h3>
+                        <ul class="list-group">
+                            <a href="#"><li>Центр поддержки</li></a>
+                            <a href="#"><li>Ошибки на сайте</li></a>
+                            <a href="#"><li>Оценить сайт</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="political-social">
+                <div class="row justify-content-between">
+                    <div class="col-sm-7 col-md-8 col-lg-9 col-xl-9 col-xxl-10">
+                        <div class="political">
+                            <ul class="nav justify-content-left">
+                                <a href="#"><li>Конфиденциальность</li></a>
+                                <a href="#"><li>Политика проведения платежей</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
+                        <div class="social">
+                            <ul class="nav justify-content-right">
+                                <a href="https://www.instagram.com/adway.kz/"><li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                  </svg></li></a>
+                                <a href="https://t.me/adway.kz"><li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                                  </svg></li></a>
+                                <a href="#"><li><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                  </svg></li></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright-web">
+                <div class="row justify-content-between">
+                    <div class="col-6">
+                        <div class="copyright">
+                            <p>© 2023, TOO «ADWAY GROUP»</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="web">
+                            <p>Разработано веб-студией: <a href="https://adway.kz">Add.kz</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!------JS код -------->
+
+    <script src="js/script.js"></script>
+
+
+    <!------JS библиотеки bootstrap -------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
